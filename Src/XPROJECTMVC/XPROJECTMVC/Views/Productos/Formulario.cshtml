@@ -1,0 +1,181 @@
+﻿@{
+    string titulo = ViewBag.titulo;
+}
+
+<div class="tabbable-line">
+
+    <div class="modal-header">
+        <h4 class="modal-title">@titulo</h4>
+    </div>
+
+    <div id="divAlert" class="alert alert-danger hide">
+        <button id="btnAlert" class="close" data-close="alert" onclick="ocultaMensaje();"></button>
+        <strong>Ocurrio un detalle! </strong><span id="mensajeError"></span>
+    </div>
+
+    <ul class="nav nav-tabs ">
+        <li class="active">
+            <a aria-expanded="true" href="#tabGeneral" data-toggle="tab" class="tabGeneral">
+                Datos
+            </a>
+        </li>
+        <li class="">
+            <a aria-expanded="false" href="#tabInventario" data-toggle="tab" class="tabInventario">
+                Inventario
+            </a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="tabGeneral">
+
+                @* ID PRODUCTO *@
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="form-group form-group-sm">
+                            <label for="usr" class="obligatorio">ID:</label>
+                            <input type="text" id="cClave" name="ID" data-readonly="N" data-mask="codigo" placeholder="ID del producto" maxlength="6" class="form-control" disabled="disabled">
+                        </div>
+                    </div>
+                </div>
+
+                @* NOMBRE PRODUCTO *@
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="form-group form-group-sm">
+                            <label for="usr" class="obligatorio">Nombre:</label>
+                            <input type="text" id="txtNombre" name="txtNombre" data-readonly="M" data-mask="nombre" placeholder="Ingrese el nombre del producto" maxlength="200" class="form-control" value="">
+                        </div>
+                    </div>
+                </div>
+
+                @* DESCRIPCIÓN PRODUCTO *@
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="form-group form-group-sm">
+                            <label for="usr" class="obligatorio">Nombre:</label>
+                            <textarea class="form-control" id="txtDescripcion" name="txtDescripcion" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                @* COMBO CATEGORIAS *@
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group form-group-sm">
+                            <label for="usr" class="obligatorio">Familia:</label>
+                            <select id="cmbCategorias" name="cmbCategorias" data-readonly="M" class="form-control" value="">
+                                @ViewBag.CategoriasOpcionesCombo
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                @* COMBO MARCAS *@
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group form-group-sm">
+                            <label for="usr" class="obligatorio">Marca:</label>
+                            <select id="cmbMarcas" name="cmbMarcas" data-readonly="M" class="form-control" value="">
+                                @ViewBag.MarcasOpcionesCombo
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                @* ACTIVO *@
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="form-group form-group-sm">
+                            <label for="usr" class="obligatorio">Activo:</label>
+                            <input type="checkbox" id="chActivo" name="chActivo" data-readonly="N" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                @* FECHAS *@
+                <div class="row">
+
+                    @* ALTA *@
+                    <div class="col-lg-6">
+                        <div class="form-group form-group-sm">
+                            <label for="usr" class="obligatorio">Alta:</label>
+                            <input type="text" id="dtAlta" name="dtAlta" data-readonly="M" maxlength="200" class="form-control" value="" disabled="disabled">
+                        </div>
+                    </div>
+
+                    @* MODIFICACIÓN *@
+                    <div class="col-lg-6">
+                        <div class="form-group form-group-sm">
+                            <label for="usr" class="obligatorio">Modificación:</label>
+                            <input type="text" id="dtModificacion" name="dtModificacion" data-readonly="M" maxlength="200" class="form-control" value="" disabled="disabled">
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+
+        <div class="tab-pane active" id="tabInventario">
+
+            @* CÓDIGO DEL PRODUCTO *@
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="form-group form-group-sm">
+                        <label for="usr" class="obligatorio">Código:</label>
+                        <input type="text" id="txtCodigo" name="txtCodigo" data-readonly="N" placeholder="Código del producto" maxlength="10" class="form-control" >
+                    </div>
+                </div>
+            </div>
+
+            @* CANTIDAD EXISTENTE *@
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="form-group form-group-sm">
+                        <label for="usr" class="obligatorio">Cantidad Existente:</label>
+                        <input type="text" id="txtCantidadExistente" name="txtCantidadExistente" data-readonly="N" placeholder="Cantidad Existente" maxlength="10" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            @* PRECIO *@
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="form-group form-group-sm">
+                        <label for="usr" class="obligatorio">Precio:</label>
+                        <input type="text" id="txtPrecio" name="txtPrecio" data-readonly="N" placeholder="Precio del producto" maxlength="10" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            @* MÍNIMO *@
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="form-group form-group-sm">
+                        <label for="usr" class="obligatorio">Cantidad Mínima:</label>
+                        <input type="text" id="txtMinimo" name="txtMinimo" data-readonly="N" placeholder="Cantidad Mínima" maxlength="10" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            @* PUBLICADO *@
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="form-group form-group-sm">
+                        <label for="usr" class="obligatorio">Publicado: </label>
+                        <input type="checkbox" id="chPublicado" name="chPublicado" data-readonly="N" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTONES -->
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        @if (ViewBag.Modalidad == "N" || ViewBag.Modalidad == "M")
+        {
+            <button type="button" class="btn btn-primary" id="btnGuardar" onclick="BlurearCampos(); GuardarProducto();">Guardar</button>
+        }
+    </div>
+</div>
+

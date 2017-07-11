@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="STOCKSHOPModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Categorias">
+          <Key>
+            <PropertyRef Name="iIdCategoria" />
+          </Key>
+          <Property Name="iIdCategoria" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="cNombre" Type="varchar(max)" Nullable="false" />
+          <Property Name="cDescripcion" Type="varchar(max)" />
+          <Property Name="lActivo" Type="bit" Nullable="false" />
+          <Property Name="dtAlta" Type="datetime" Nullable="false" />
+          <Property Name="dtModificacion" Type="datetime" />
+        </EntityType>
+        <EntityType Name="DetallesVenta">
+          <Key>
+            <PropertyRef Name="iIdDetalle" />
+          </Key>
+          <Property Name="iIdDetalle" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="iIdVenta" Type="int" Nullable="false" />
+          <Property Name="iIdProducto" Type="int" Nullable="false" />
+          <Property Name="dCantidad" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="dPrecio" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="dPorcentajeIVA" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="dMontoIVA" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="dPorcentajeDescuento" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="dMontoDescuento" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="lActivo" Type="bit" Nullable="false" />
+          <Property Name="dtAlta" Type="datetime" Nullable="false" />
+          <Property Name="dtModificacion" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Marcas">
+          <Key>
+            <PropertyRef Name="iIdMarca" />
+          </Key>
+          <Property Name="iIdMarca" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="cNombre" Type="varchar(max)" Nullable="false" />
+          <Property Name="lActivo" Type="bit" Nullable="false" />
+          <Property Name="dtAlta" Type="datetime" Nullable="false" />
+          <Property Name="dtModificacion" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Productos">
+          <Key>
+            <PropertyRef Name="iIdProducto" />
+          </Key>
+          <Property Name="iIdProducto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="iIdCategoria" Type="int" Nullable="false" />
+          <Property Name="iIdMarca" Type="int" />
+          <Property Name="cNombre" Type="varchar(max)" Nullable="false" />
+          <Property Name="cDescripcion" Type="varchar(max)" />
+          <Property Name="cCodigo" Type="varchar(max)" Nullable="false" />
+          <Property Name="dPrecio" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="dCantidadExistente" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="dMinimo" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="lPublicado" Type="bit" Nullable="false" />
+          <Property Name="lActivo" Type="bit" Nullable="false" />
+          <Property Name="dtAlta" Type="datetime" Nullable="false" />
+          <Property Name="dtModificacion" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Ventas">
+          <Key>
+            <PropertyRef Name="iIdVenta" />
+          </Key>
+          <Property Name="iIdVenta" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="iIdUsuario" Type="int" Nullable="false" />
+          <Property Name="cNombreCliente" Type="varchar(max)" Nullable="false" />
+          <Property Name="dMonto" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="lActivo" Type="bit" Nullable="false" />
+          <Property Name="dtAlta" Type="datetime" Nullable="false" />
+          <Property Name="dtModificacion" Type="datetime" />
+        </EntityType>
+        <EntityContainer Name="STOCKSHOPModelStoreContainer">
+          <EntitySet Name="Categorias" EntityType="Self.Categorias" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DetallesVenta" EntityType="Self.DetallesVenta" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Marcas" EntityType="Self.Marcas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Productos" EntityType="Self.Productos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Ventas" EntityType="Self.Ventas" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="STOCKSHOPModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="STOCKSHOPEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Categorias" EntityType="STOCKSHOPModel.Categorias" />
+          <EntitySet Name="DetallesVenta" EntityType="STOCKSHOPModel.DetallesVenta" />
+          <EntitySet Name="Marcas" EntityType="STOCKSHOPModel.Marcas" />
+          <EntitySet Name="Productos" EntityType="STOCKSHOPModel.Productos" />
+          <EntitySet Name="Ventas" EntityType="STOCKSHOPModel.Ventas" />
+        </EntityContainer>
+        <EntityType Name="Categorias">
+          <Key>
+            <PropertyRef Name="iIdCategoria" />
+          </Key>
+          <Property Name="iIdCategoria" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="cNombre" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="cDescripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="lActivo" Type="Boolean" Nullable="false" />
+          <Property Name="dtAlta" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="dtModificacion" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="DetallesVenta">
+          <Key>
+            <PropertyRef Name="iIdDetalle" />
+          </Key>
+          <Property Name="iIdDetalle" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="iIdVenta" Type="Int32" Nullable="false" />
+          <Property Name="iIdProducto" Type="Int32" Nullable="false" />
+          <Property Name="dCantidad" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="dPrecio" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="dPorcentajeIVA" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="dMontoIVA" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="dPorcentajeDescuento" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="dMontoDescuento" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="lActivo" Type="Boolean" Nullable="false" />
+          <Property Name="dtAlta" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="dtModificacion" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Marcas">
+          <Key>
+            <PropertyRef Name="iIdMarca" />
+          </Key>
+          <Property Name="iIdMarca" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="cNombre" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="lActivo" Type="Boolean" Nullable="false" />
+          <Property Name="dtAlta" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="dtModificacion" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Productos">
+          <Key>
+            <PropertyRef Name="iIdProducto" />
+          </Key>
+          <Property Name="iIdProducto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="iIdCategoria" Type="Int32" Nullable="false" />
+          <Property Name="iIdMarca" Type="Int32" />
+          <Property Name="cNombre" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="cDescripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="cCodigo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="dPrecio" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="dCantidadExistente" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="dMinimo" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="lPublicado" Type="Boolean" Nullable="false" />
+          <Property Name="lActivo" Type="Boolean" Nullable="false" />
+          <Property Name="dtAlta" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="dtModificacion" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Ventas">
+          <Key>
+            <PropertyRef Name="iIdVenta" />
+          </Key>
+          <Property Name="iIdVenta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="iIdUsuario" Type="Int32" Nullable="false" />
+          <Property Name="cNombreCliente" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="dMonto" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="lActivo" Type="Boolean" Nullable="false" />
+          <Property Name="dtAlta" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="dtModificacion" Type="DateTime" Precision="3" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="STOCKSHOPModelStoreContainer" CdmEntityContainer="STOCKSHOPEntities">
+          <EntitySetMapping Name="Categorias">
+            <EntityTypeMapping TypeName="STOCKSHOPModel.Categorias">
+              <MappingFragment StoreEntitySet="Categorias">
+                <ScalarProperty Name="dtModificacion" ColumnName="dtModificacion" />
+                <ScalarProperty Name="dtAlta" ColumnName="dtAlta" />
+                <ScalarProperty Name="lActivo" ColumnName="lActivo" />
+                <ScalarProperty Name="cDescripcion" ColumnName="cDescripcion" />
+                <ScalarProperty Name="cNombre" ColumnName="cNombre" />
+                <ScalarProperty Name="iIdCategoria" ColumnName="iIdCategoria" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DetallesVenta">
+            <EntityTypeMapping TypeName="STOCKSHOPModel.DetallesVenta">
+              <MappingFragment StoreEntitySet="DetallesVenta">
+                <ScalarProperty Name="dtModificacion" ColumnName="dtModificacion" />
+                <ScalarProperty Name="dtAlta" ColumnName="dtAlta" />
+                <ScalarProperty Name="lActivo" ColumnName="lActivo" />
+                <ScalarProperty Name="dMontoDescuento" ColumnName="dMontoDescuento" />
+                <ScalarProperty Name="dPorcentajeDescuento" ColumnName="dPorcentajeDescuento" />
+                <ScalarProperty Name="dMontoIVA" ColumnName="dMontoIVA" />
+                <ScalarProperty Name="dPorcentajeIVA" ColumnName="dPorcentajeIVA" />
+                <ScalarProperty Name="dPrecio" ColumnName="dPrecio" />
+                <ScalarProperty Name="dCantidad" ColumnName="dCantidad" />
+                <ScalarProperty Name="iIdProducto" ColumnName="iIdProducto" />
+                <ScalarProperty Name="iIdVenta" ColumnName="iIdVenta" />
+                <ScalarProperty Name="iIdDetalle" ColumnName="iIdDetalle" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Marcas">
+            <EntityTypeMapping TypeName="STOCKSHOPModel.Marcas">
+              <MappingFragment StoreEntitySet="Marcas">
+                <ScalarProperty Name="dtModificacion" ColumnName="dtModificacion" />
+                <ScalarProperty Name="dtAlta" ColumnName="dtAlta" />
+                <ScalarProperty Name="lActivo" ColumnName="lActivo" />
+                <ScalarProperty Name="cNombre" ColumnName="cNombre" />
+                <ScalarProperty Name="iIdMarca" ColumnName="iIdMarca" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Productos">
+            <EntityTypeMapping TypeName="STOCKSHOPModel.Productos">
+              <MappingFragment StoreEntitySet="Productos">
+                <ScalarProperty Name="dtModificacion" ColumnName="dtModificacion" />
+                <ScalarProperty Name="dtAlta" ColumnName="dtAlta" />
+                <ScalarProperty Name="lActivo" ColumnName="lActivo" />
+                <ScalarProperty Name="lPublicado" ColumnName="lPublicado" />
+                <ScalarProperty Name="dMinimo" ColumnName="dMinimo" />
+                <ScalarProperty Name="dCantidadExistente" ColumnName="dCantidadExistente" />
+                <ScalarProperty Name="dPrecio" ColumnName="dPrecio" />
+                <ScalarProperty Name="cCodigo" ColumnName="cCodigo" />
+                <ScalarProperty Name="cDescripcion" ColumnName="cDescripcion" />
+                <ScalarProperty Name="cNombre" ColumnName="cNombre" />
+                <ScalarProperty Name="iIdMarca" ColumnName="iIdMarca" />
+                <ScalarProperty Name="iIdCategoria" ColumnName="iIdCategoria" />
+                <ScalarProperty Name="iIdProducto" ColumnName="iIdProducto" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Ventas">
+            <EntityTypeMapping TypeName="STOCKSHOPModel.Ventas">
+              <MappingFragment StoreEntitySet="Ventas">
+                <ScalarProperty Name="dtModificacion" ColumnName="dtModificacion" />
+                <ScalarProperty Name="dtAlta" ColumnName="dtAlta" />
+                <ScalarProperty Name="lActivo" ColumnName="lActivo" />
+                <ScalarProperty Name="dMonto" ColumnName="dMonto" />
+                <ScalarProperty Name="cNombreCliente" ColumnName="cNombreCliente" />
+                <ScalarProperty Name="iIdUsuario" ColumnName="iIdUsuario" />
+                <ScalarProperty Name="iIdVenta" ColumnName="iIdVenta" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

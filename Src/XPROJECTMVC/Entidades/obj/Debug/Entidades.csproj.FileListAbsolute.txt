@@ -1,0 +1,5 @@
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\Entidades\bin\Debug\Entidades.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\Entidades\bin\Debug\Entidades.pdb
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\Entidades\obj\Debug\Entidades.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\Entidades\obj\Debug\Entidades.pdb

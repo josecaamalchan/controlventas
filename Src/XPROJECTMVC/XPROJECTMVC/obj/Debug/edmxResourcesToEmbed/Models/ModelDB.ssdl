@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="STOCKSHOPModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Categorias">
+    <Key>
+      <PropertyRef Name="iIdCategoria" />
+    </Key>
+    <Property Name="iIdCategoria" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cNombre" Type="varchar(max)" Nullable="false" />
+    <Property Name="cDescripcion" Type="varchar(max)" />
+    <Property Name="lActivo" Type="bit" Nullable="false" />
+    <Property Name="dtAlta" Type="datetime" Nullable="false" />
+    <Property Name="dtModificacion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DetallesVenta">
+    <Key>
+      <PropertyRef Name="iIdDetalle" />
+    </Key>
+    <Property Name="iIdDetalle" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="iIdVenta" Type="int" Nullable="false" />
+    <Property Name="iIdProducto" Type="int" Nullable="false" />
+    <Property Name="dCantidad" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="dPrecio" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="dPorcentajeIVA" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="dMontoIVA" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="dPorcentajeDescuento" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="dMontoDescuento" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="lActivo" Type="bit" Nullable="false" />
+    <Property Name="dtAlta" Type="datetime" Nullable="false" />
+    <Property Name="dtModificacion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Marcas">
+    <Key>
+      <PropertyRef Name="iIdMarca" />
+    </Key>
+    <Property Name="iIdMarca" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cNombre" Type="varchar(max)" Nullable="false" />
+    <Property Name="lActivo" Type="bit" Nullable="false" />
+    <Property Name="dtAlta" Type="datetime" Nullable="false" />
+    <Property Name="dtModificacion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Productos">
+    <Key>
+      <PropertyRef Name="iIdProducto" />
+    </Key>
+    <Property Name="iIdProducto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="iIdCategoria" Type="int" Nullable="false" />
+    <Property Name="iIdMarca" Type="int" />
+    <Property Name="cNombre" Type="varchar(max)" Nullable="false" />
+    <Property Name="cDescripcion" Type="varchar(max)" />
+    <Property Name="cCodigo" Type="varchar(max)" Nullable="false" />
+    <Property Name="dPrecio" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="dCantidadExistente" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="dMinimo" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="lPublicado" Type="bit" Nullable="false" />
+    <Property Name="lActivo" Type="bit" Nullable="false" />
+    <Property Name="dtAlta" Type="datetime" Nullable="false" />
+    <Property Name="dtModificacion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Ventas">
+    <Key>
+      <PropertyRef Name="iIdVenta" />
+    </Key>
+    <Property Name="iIdVenta" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="iIdUsuario" Type="int" Nullable="false" />
+    <Property Name="cNombreCliente" Type="varchar(max)" Nullable="false" />
+    <Property Name="dMonto" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="lActivo" Type="bit" Nullable="false" />
+    <Property Name="dtAlta" Type="datetime" Nullable="false" />
+    <Property Name="dtModificacion" Type="datetime" />
+  </EntityType>
+  <EntityContainer Name="STOCKSHOPModelStoreContainer">
+    <EntitySet Name="Categorias" EntityType="Self.Categorias" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DetallesVenta" EntityType="Self.DetallesVenta" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Marcas" EntityType="Self.Marcas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Productos" EntityType="Self.Productos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ventas" EntityType="Self.Ventas" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

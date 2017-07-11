@@ -1,0 +1,9 @@
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\Negocio\bin\Debug\Negocio.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\Negocio\bin\Debug\Negocio.pdb
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\Negocio\obj\Debug\Negocio.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\Negocio\obj\Debug\Negocio.pdb
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\Negocio\bin\Debug\AccesoDatos.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\Negocio\bin\Debug\DTO.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\Negocio\bin\Debug\AccesoDatos.pdb
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\Negocio\bin\Debug\DTO.pdb

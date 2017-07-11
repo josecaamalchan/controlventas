@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="STOCKSHOPModelStoreContainer" CdmEntityContainer="STOCKSHOPEntities">
+    <EntitySetMapping Name="Categorias">
+      <EntityTypeMapping TypeName="STOCKSHOPModel.Categorias">
+        <MappingFragment StoreEntitySet="Categorias">
+          <ScalarProperty Name="dtModificacion" ColumnName="dtModificacion" />
+          <ScalarProperty Name="dtAlta" ColumnName="dtAlta" />
+          <ScalarProperty Name="lActivo" ColumnName="lActivo" />
+          <ScalarProperty Name="cDescripcion" ColumnName="cDescripcion" />
+          <ScalarProperty Name="cNombre" ColumnName="cNombre" />
+          <ScalarProperty Name="iIdCategoria" ColumnName="iIdCategoria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetallesVenta">
+      <EntityTypeMapping TypeName="STOCKSHOPModel.DetallesVenta">
+        <MappingFragment StoreEntitySet="DetallesVenta">
+          <ScalarProperty Name="dtModificacion" ColumnName="dtModificacion" />
+          <ScalarProperty Name="dtAlta" ColumnName="dtAlta" />
+          <ScalarProperty Name="lActivo" ColumnName="lActivo" />
+          <ScalarProperty Name="dMontoDescuento" ColumnName="dMontoDescuento" />
+          <ScalarProperty Name="dPorcentajeDescuento" ColumnName="dPorcentajeDescuento" />
+          <ScalarProperty Name="dMontoIVA" ColumnName="dMontoIVA" />
+          <ScalarProperty Name="dPorcentajeIVA" ColumnName="dPorcentajeIVA" />
+          <ScalarProperty Name="dPrecio" ColumnName="dPrecio" />
+          <ScalarProperty Name="dCantidad" ColumnName="dCantidad" />
+          <ScalarProperty Name="iIdProducto" ColumnName="iIdProducto" />
+          <ScalarProperty Name="iIdVenta" ColumnName="iIdVenta" />
+          <ScalarProperty Name="iIdDetalle" ColumnName="iIdDetalle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Marcas">
+      <EntityTypeMapping TypeName="STOCKSHOPModel.Marcas">
+        <MappingFragment StoreEntitySet="Marcas">
+          <ScalarProperty Name="dtModificacion" ColumnName="dtModificacion" />
+          <ScalarProperty Name="dtAlta" ColumnName="dtAlta" />
+          <ScalarProperty Name="lActivo" ColumnName="lActivo" />
+          <ScalarProperty Name="cNombre" ColumnName="cNombre" />
+          <ScalarProperty Name="iIdMarca" ColumnName="iIdMarca" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Productos">
+      <EntityTypeMapping TypeName="STOCKSHOPModel.Productos">
+        <MappingFragment StoreEntitySet="Productos">
+          <ScalarProperty Name="dtModificacion" ColumnName="dtModificacion" />
+          <ScalarProperty Name="dtAlta" ColumnName="dtAlta" />
+          <ScalarProperty Name="lActivo" ColumnName="lActivo" />
+          <ScalarProperty Name="lPublicado" ColumnName="lPublicado" />
+          <ScalarProperty Name="dMinimo" ColumnName="dMinimo" />
+          <ScalarProperty Name="dCantidadExistente" ColumnName="dCantidadExistente" />
+          <ScalarProperty Name="dPrecio" ColumnName="dPrecio" />
+          <ScalarProperty Name="cCodigo" ColumnName="cCodigo" />
+          <ScalarProperty Name="cDescripcion" ColumnName="cDescripcion" />
+          <ScalarProperty Name="cNombre" ColumnName="cNombre" />
+          <ScalarProperty Name="iIdMarca" ColumnName="iIdMarca" />
+          <ScalarProperty Name="iIdCategoria" ColumnName="iIdCategoria" />
+          <ScalarProperty Name="iIdProducto" ColumnName="iIdProducto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ventas">
+      <EntityTypeMapping TypeName="STOCKSHOPModel.Ventas">
+        <MappingFragment StoreEntitySet="Ventas">
+          <ScalarProperty Name="dtModificacion" ColumnName="dtModificacion" />
+          <ScalarProperty Name="dtAlta" ColumnName="dtAlta" />
+          <ScalarProperty Name="lActivo" ColumnName="lActivo" />
+          <ScalarProperty Name="dMonto" ColumnName="dMonto" />
+          <ScalarProperty Name="cNombreCliente" ColumnName="cNombreCliente" />
+          <ScalarProperty Name="iIdUsuario" ColumnName="iIdUsuario" />
+          <ScalarProperty Name="iIdVenta" ColumnName="iIdVenta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

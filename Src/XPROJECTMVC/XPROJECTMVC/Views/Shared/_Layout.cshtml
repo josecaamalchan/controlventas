@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- COMIENZO ESTILOS OBLIGATORIOS GLOBAL -->
+    @Styles.Render("http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all")
+    @Styles.Render("~/assets/global/plugins/font-awesome/css/font-awesome.min.css")
+    @Styles.Render("~/assets/global/plugins/simple-line-icons/simple-line-icons.min.css")
+    @Styles.Render("~/assets/global/plugins/bootstrap/css/bootstrap.min.css")
+    @Styles.Render("~/assets/global/plugins/uniform/css/uniform.default.css")
+    @Styles.Render("~/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css")
+    <!-- FIN ESTILOS OBLIGATORIOS GLOBAL -->
+    <!--COMIENZO ESTILO DEL TEMA-->
+    @Styles.Render("~/assets/global/css/components.css")
+    @Styles.Render("~/assets/global/css/plugins.css")
+    @Styles.Render("~/assets/admin/layout/css/layout.css")
+    @Styles.Render("~/assets/admin/layout/css/themes/darkblue.css")
+    @Styles.Render("~/assets/admin/layout/css/custom.css")
+    @Styles.Render("~/assets/global/plugins/jstree/dist/themes/default/style.min.css")
+    @Styles.Render("~/assets/global/plugins/select2/select2.css")
+    @Styles.Render("~/assets/global/plugins/datatables/extensions/Scroller/css/dataTables.scroller.min.css")
+    @Styles.Render("~/assets/admin/pages/css/todo.css")
+    @Styles.Render("~/assets/admin/pages/css/profile.css")
+    @Styles.Render("~/assets/admin/pages/css/tasks.css")
+    @Styles.Render("~/assets/global/plugins/icheck/skins/all.css")
+    @Styles.Render("~/assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css")
+    @Styles.Render("~/assets/global/plugins/bootstrap-select/bootstrap-select.min.css")
+    @Styles.Render("~/assets/global/plugins/jquery-multi-select/css/multi-select.css")
+    @Styles.Render("~/assets/global/css/plugins.css")
+    @Styles.Render("~/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css")
+    @* @Styles.Render("~/fancybox/jquery.fancybox.css")*@
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    @Styles.Render("~/assets/global/plugins/jquery-nestable/jquery.nestable.css")
+    <!--END PAGE LEVEL STYLES-->
+    <!--FIN ESTILOS ESTILO DEL TEMA-->
+</head>
+<body class="page-header-fixed page-quick-sidebar-over-content page-sidebar-closed-hide-logo page-container-bg-solid">
+    @Html.Partial("_HeaderPartial")
+
+    <div class="page-container">
+        @Html.Partial("SliderMenu")
+
+        <div class="page-content-wrapper">
+            <div class="page-content" style="min-height:1053px">
+                @RenderBody()
+                <div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dissmiss="modal" aria-hidden="true"></button>
+                                <h4 class="modal-title">Modal Title</h4>
+                            </div>
+                            <div class="modal-body">
+                                algo iría aquí
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn blue">Save changes</button>
+                                <button type="button" class="btn default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @Html.Partial("_Footer")
+
+    <!--COMIENZO NÚCLEO PLUGINS-->
+    @Scripts.Render("~/assets/global/plugins/jquery.min.js")
+    @Scripts.Render("~/assets/global/plugins/jquery-migrate.min.js")
+    @Scripts.Render("~/assets/global/plugins/jquery-ui/jquery-ui.min.js")
+    @Scripts.Render("~/assets/global/plugins/bootstrap/js/bootstrap.min.js")
+    @Scripts.Render("~/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js")
+    @Scripts.Render("~/assets/global/plugins/jquery-inputmask/jquery.inputmask.bundle.min.js")
+    @Scripts.Render("~/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js")
+    @Scripts.Render("~/assets/global/plugins/jquery.blockui.min.js")
+    @Scripts.Render("~/assets/global/plugins/jquery.cokie.min.js")
+    @Scripts.Render("~/assets/global/plugins/uniform/jquery.uniform.min.js")
+    @Scripts.Render("~/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js")
+    @Scripts.Render("~/assets/global/plugins/icheck/icheck.min.js")
+    <!--FIN NÚCLEO PLUGINS-->
+    <!--BEGIN PAGE LEVEL PLUGINS-->
+    @Scripts.Render("~/assets/global/plugins/bootbox/bootbox.min.js")
+    <!--END PAGE LEVEL PLUGINS-->
+    <!--COMIENZO NIVEL DE SRIPTS-->
+    @Scripts.Render("~/assets/global/scripts/metronic.js")
+    @Scripts.Render("~/assets/admin/layout/scripts/layout.js")
+    @Scripts.Render("~/assets/admin/layout/scripts/quick-sidebar.js")
+    @Scripts.Render("~/assets/admin/layout/scripts/demo.js")
+    @Scripts.Render("~/assets/admin/pages/scripts/index.js")
+
+    @* SCRIPTS PARA EL MÓDULO DE ADMINISTRADOR DE REGIONES *@
+
+    @Scripts.Render("~/Scripts/jquery.validate.js")
+    @Scripts.Render("~/assets/global/plugins/select2/select2.min.js")
+    @Scripts.Render("~/assets/global/plugins/datatables/media/js/jquery.dataTables.min.js")
+    @Scripts.Render("~/assets/global/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.min.js")
+
+    @Scripts.Render("~/assets/global/plugins/datatables/extensions/Scroller/js/dataTables.scroller.min.js")
+    @Scripts.Render("~/assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js")
+    @Scripts.Render("~/assets/global/plugins/jstree/dist/jstree.min.js")
+    @Scripts.Render("~/assets/admin/pages/scripts/ui-tree.js")
+    @Scripts.Render("~/Scripts/Common.js")
+
+    @Scripts.Render("~/assets/admin/pages/scripts/table-advanced.js")
+    @Scripts.Render("~/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js")
+
+    @Scripts.Render("~/assets/global/plugins/bootstrap-daterangepicker/moment.min.js")
+    @Scripts.Render("~/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.js")
+
+    @Scripts.Render("~/assets/admin/pages/scripts/components-pickers.js")
+    @Scripts.Render("~/assets/admin/pages/scripts/todo.js")
+
+    @Scripts.Render("~/assets/global/plugins/jquery-nestable/jquery.nestable.js")
+
+    @Scripts.Render("~/fancybox/jquery.fancybox.js")
+    @Styles.Render("~/fancybox/jquery.fancybox.css")
+
+    @Styles.Render("~/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css")
+    @Scripts.Render("~/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js")
+
+    @RenderSection("Scripts", required: false)
+
+    <script>
+        jQuery(document).ready(function () {
+            Metronic.init(); // init metronic core componets
+            Layout.init(); // init layout
+            QuickSidebar.init(); // init quick sidebar
+            Demo.init(); // init demo features
+            Index.init();
+            UITree.init();
+            Todo.init();
+            ComponentsPickers.init();
+            @RenderSection("inicializaComplento", required: false)
+            Metronic.setAssetsPath("assets/");
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="STOCKSHOPModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="STOCKSHOPEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Categorias" EntityType="STOCKSHOPModel.Categorias" />
+    <EntitySet Name="DetallesVenta" EntityType="STOCKSHOPModel.DetallesVenta" />
+    <EntitySet Name="Marcas" EntityType="STOCKSHOPModel.Marcas" />
+    <EntitySet Name="Productos" EntityType="STOCKSHOPModel.Productos" />
+    <EntitySet Name="Ventas" EntityType="STOCKSHOPModel.Ventas" />
+  </EntityContainer>
+  <EntityType Name="Categorias">
+    <Key>
+      <PropertyRef Name="iIdCategoria" />
+    </Key>
+    <Property Name="iIdCategoria" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cNombre" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="cDescripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="lActivo" Type="Boolean" Nullable="false" />
+    <Property Name="dtAlta" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="dtModificacion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="DetallesVenta">
+    <Key>
+      <PropertyRef Name="iIdDetalle" />
+    </Key>
+    <Property Name="iIdDetalle" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="iIdVenta" Type="Int32" Nullable="false" />
+    <Property Name="iIdProducto" Type="Int32" Nullable="false" />
+    <Property Name="dCantidad" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="dPrecio" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="dPorcentajeIVA" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="dMontoIVA" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="dPorcentajeDescuento" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="dMontoDescuento" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="lActivo" Type="Boolean" Nullable="false" />
+    <Property Name="dtAlta" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="dtModificacion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Marcas">
+    <Key>
+      <PropertyRef Name="iIdMarca" />
+    </Key>
+    <Property Name="iIdMarca" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cNombre" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="lActivo" Type="Boolean" Nullable="false" />
+    <Property Name="dtAlta" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="dtModificacion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Productos">
+    <Key>
+      <PropertyRef Name="iIdProducto" />
+    </Key>
+    <Property Name="iIdProducto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="iIdCategoria" Type="Int32" Nullable="false" />
+    <Property Name="iIdMarca" Type="Int32" />
+    <Property Name="cNombre" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="cDescripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="cCodigo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="dPrecio" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="dCantidadExistente" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="dMinimo" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="lPublicado" Type="Boolean" Nullable="false" />
+    <Property Name="lActivo" Type="Boolean" Nullable="false" />
+    <Property Name="dtAlta" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="dtModificacion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Ventas">
+    <Key>
+      <PropertyRef Name="iIdVenta" />
+    </Key>
+    <Property Name="iIdVenta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="iIdUsuario" Type="Int32" Nullable="false" />
+    <Property Name="cNombreCliente" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="dMonto" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="lActivo" Type="Boolean" Nullable="false" />
+    <Property Name="dtAlta" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="dtModificacion" Type="DateTime" Precision="3" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,168 @@
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\ApplicationInsights.config
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\roslyn\csc.exe
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\roslyn\System.Collections.Immutable.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\roslyn\System.Reflection.Metadata.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\roslyn\vbc.exe
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\roslyn\VBCSCompiler.exe
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\roslyn\VBCSCompiler.exe.config
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\XPROJECTMVC.dll.config
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\XPROJECTMVC.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\XPROJECTMVC.pdb
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Antlr3.Runtime.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\EntityFramework.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\EntityFramework.SqlServer.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AI.Agent.Intercept.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AI.DependencyCollector.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AI.Web.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AI.WindowsServer.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.ApplicationInsights.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AspNet.Identity.Core.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.Cookies.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.Facebook.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.Google.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.OAuth.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.Twitter.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Web.Infrastructure.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Newtonsoft.Json.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Owin.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\System.Web.Helpers.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\System.Web.Mvc.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\System.Web.Optimization.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\System.Web.Razor.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\System.Web.WebPages.Deployment.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\System.Web.WebPages.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\System.Web.WebPages.Razor.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\WebGrease.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AI.DependencyCollector.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AI.Web.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AI.WindowsServer.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.ApplicationInsights.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\System.Web.Helpers.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\System.Web.Mvc.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\System.Web.Optimization.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\System.Web.Razor.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\System.Web.WebPages.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\System.Web.WebPages.Deployment.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\System.Web.WebPages.Razor.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Antlr3.Runtime.pdb
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Newtonsoft.Json.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\EntityFramework.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\EntityFramework.SqlServer.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AspNet.Identity.Core.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.Facebook.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.Cookies.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.OAuth.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.Google.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.Twitter.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\obj\Debug\XPROJECTMVC.csprojResolveAssemblyReference.cache
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\obj\Debug\XPROJECTMVC.dll
+C:\SIAC\Alpha\XPROJECTMVC\XPROJECTMVC\obj\Debug\XPROJECTMVC.pdb
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\ApplicationInsights.config
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\roslyn\csc.exe
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\roslyn\System.Collections.Immutable.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\roslyn\System.Reflection.Metadata.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\roslyn\vbc.exe
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\roslyn\VBCSCompiler.exe
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\roslyn\VBCSCompiler.exe.config
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\XPROJECTMVC.dll.config
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\XPROJECTMVC.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\XPROJECTMVC.pdb
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Antlr3.Runtime.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\EntityFramework.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\EntityFramework.SqlServer.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AI.Agent.Intercept.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AI.DependencyCollector.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AI.Web.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AI.WindowsServer.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.ApplicationInsights.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AspNet.Identity.Core.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.Cookies.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.Facebook.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.Google.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.OAuth.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.Twitter.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Web.Infrastructure.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Newtonsoft.Json.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Owin.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\System.Web.Helpers.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\System.Web.Mvc.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\System.Web.Optimization.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\System.Web.Razor.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\System.Web.WebPages.Deployment.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\System.Web.WebPages.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\System.Web.WebPages.Razor.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\WebGrease.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AI.DependencyCollector.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AI.Web.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AI.WindowsServer.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.ApplicationInsights.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\System.Web.Helpers.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\System.Web.Mvc.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\System.Web.Optimization.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\System.Web.Razor.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\System.Web.WebPages.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\System.Web.WebPages.Deployment.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\System.Web.WebPages.Razor.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Antlr3.Runtime.pdb
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Newtonsoft.Json.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\EntityFramework.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\EntityFramework.SqlServer.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AspNet.Identity.Core.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.Facebook.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.Cookies.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.OAuth.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.Google.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.Twitter.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\obj\Debug\XPROJECTMVC.csprojResolveAssemblyReference.cache
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\obj\Debug\XPROJECTMVC.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\obj\Debug\XPROJECTMVC.pdb
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\DTO.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Negocio.dll
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\DTO.pdb
+D:\02 - PERSONALES\TIENDITA\XPROJECTMVC\XPROJECTMVC\bin\Negocio.pdb

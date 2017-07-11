@@ -1,0 +1,114 @@
+﻿@using XPROJECTMVC.Models.DTO;
+@model List<ProductoDTO>
+
+@{
+    ViewBag.Title = "Productos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Scripts.Render("~/Scripts/Catalogos/Productos.js")
+<script>
+    var UrlControllers = {
+        _ObtenerFormularioProductos: '@Url.Action("ObtenerFormulario", "Productos")',
+        _GuardarRegistro: '@Url.Action("Guardar", "Productos")'
+    }
+</script>
+        <div class="Row">
+            @* MODAL PARA EL FORMULARIO *@
+            <div id="modalProducto" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body" id="mb-Producto">
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                            <div id="divVistaFormulario"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            @* GRID DE PRODUCTOS *@
+            <div class="col-md-12">
+
+                <div class="portlet light">
+                    <div class="portlet-title">
+                        <div class="caption font-green-haze uppercase">
+                            <i class="fa fa-folder"></i>@ViewBag.Title
+                        </div>
+
+                        <div class="actions">
+                            <a class="btn btn-default btn-sm green-haze-stripe" id="btnNuevo" onclick="javascript: ObtenerFormulario();" data-toggle="modal" data-target="#modalProducto">
+                                <i class="fa fa-plus"></i> Nuevo
+                            </a>
+                            <a class="btn btn-default btn-sm green-haze-stripe" id="btnBusquedaAvanzada" data-toggle="modal" data-target="#modalProducto">
+                                <i class="fa fa-search"></i> Búsqueda Avanzada
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="portlet-body">
+                        <div class="dataTables_wrapper no-footer" id="tProducto_wrapper">
+                            <button id="btnAgregarRow" type="button" class="hide"></button>
+                            <button id="btnModificarRow" type="button" class="hide"></button>
+                            <button id="btnEliminarRow" type="button" class="hide"></button>
+                            <button id="btnEliminarRows" type="button" class="hide"></button>
+                            <table aria-describedby="tProducto_info" role="grid" class="table table-striped table-bordered table-advance table-hover" id="tProducto">
+                                <thead>
+                                    <tr role="row">
+                                        <th>Id.</th>
+                                        <th>Nombre</th>
+                                        <th>Descripción</th>
+                                        <th>Categoría</th>
+                                        <th>Cantidad Existente</th>
+                                        <th>Precio</th>
+                                        <th>Activo</th>
+                                        <th>Alta</th>
+                                        <th>Modificación</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (ProductoDTO item in Model)
+                                    {
+                                        <tr id="@item.iIdProducto">
+                                            <td>@item.iIdProducto</td>
+                                            <td>@item.cNombre</td>
+                                            <td>@item.cDescripcion</td>
+                                            <td>
+                                                <div>
+                                                    @if (item.lActivo)
+                                                    {
+                                                        <i class="fa fa-check-square-o"></i>
+                                                    }
+                                                    else
+                                                    {
+                                                       <i class="fa fa-square-o"></i>
+                                                    }
+                                                </div>
+                                            </td>
+                                            <td>@item.cNombreCategoria</td>
+                                            <td>@item.dCantidadExistente</td>
+                                            <td>@item.dPrecio.ToString("$#0.0")</td>
+                                            <td>@item.dtAlta.ToString("dd/MM/yyyy")</td>
+                                            
+                                            @if (item.dtModificacion.HasValue)
+                                            {
+                                                <td>@item.dtModificacion.Value.ToString("dd/MM/yyyy")</td>
+                                            }
+                                            else
+                                            {
+                                                <td>""</td>
+                                            }
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<script>
+    TableAdvanced.init();
+    tablaCatalogo.init("tProducto");
+    obtenerRegistrosGrid();
+</script>
